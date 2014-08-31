@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '4.0.0'
+gem 'bootstrap-sass', '2.3.2.0'
+gem 'sprockets', '2.11.0'
 
 group :development, :test do
   gem 'sqlite3'
@@ -13,7 +15,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '~> 2.35.1'
   gem 'capybara', '~> 2.4.1'
 end
 
