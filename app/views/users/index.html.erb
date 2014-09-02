@@ -1,0 +1,11 @@
+<h1> All Users </h1>
+<div>
+  <% @users.each  do |u| %>
+  <div>
+    <%= gravatar_for u %>
+    <div>Name:   <%= u.name %></div>
+    <div>Email:   <%= u.email %></div>
+  </div>
+  <br><br><br>
+  <% end %>
+</div>
